@@ -102,12 +102,7 @@ p {
 }
 
 nav {
-  padding: 10px 0;
-}
-
-nav li {
-  display: inline;
-  list-style: none;
+  padding: 15px;
 }
 
 nav ul {
@@ -115,6 +110,9 @@ nav ul {
   margin: 0;
 }
 
+nav li {
+display: inline-flex;
+}
 @media (max-width: 900px) {
   h1 {
     font-size: 60px;
