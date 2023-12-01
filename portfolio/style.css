@@ -98,7 +98,7 @@ p {
 }
 
 .logo {
-  max-width: 100px;
+  max-height: 60px;
 }
 
 nav {
@@ -112,20 +112,52 @@ nav ul {
 
 nav li {
 display: inline-flex;
+list-style: none;
+line-height: 42px;
+margin-left: 15px;
 }
+
+nav a {
+  text-decoration: none;
+  color: #272142;
+  transition: all 100ms ease-in-out;
+}
+
+nav li.active a, nav a:hover {
+  color: var(--primary-color);
+}
+
 @media (max-width: 900px) {
   h1 {
-    font-size: 60px;
+    font-size: 38px;
   }
-  h2 {
-    font-size: 45px;
+
+  h2, p {
+    font-size: 20px;
   }
+ p {
+    font-size: 20px;
+  }
+
+  li {
+    font-size: small;
+  }
+
+  .hero{
+    padding: 40px;
+  }
+
   .project-description {
     padding: 0;
     text-align: center;
   }
+  
   .content {
     padding: 10px;
     text-align: center;
+  }
+
+  .logo {
+margin-top: 10px;
   }
 }
