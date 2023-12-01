@@ -1,8 +1,8 @@
 :root {
   --primary-color: #6c63ff;
-  --secondary-color: #f9f7fe;
-  --heading-font-family: "superior-title", serif;
-  --default-font-family: font-family: "amandine", sans-serif;
+  --secondary-color: rgb (249, 247, 254)
+  --heading-font-family: 'Playfair', serif;
+  --default-font-family: 'Poppins', sans-serif;
 }
 
 h1,
@@ -17,7 +17,7 @@ h6 {
 }
 
 h1 {
-  font-size: 96px;
+  font-size: 90px;
   line-height: 1.5;
 }
 
@@ -28,9 +28,76 @@ h2 {
 p {
   font-family: var(--default-font-family);
   font-weight: normal;
-  font-size: 16px;
-  line-height: 1.5;
+  font-size: 18px;
+  line-height: 1.8;
 }
+
+h4 {
+  font-size: 48px;
+}
+
+nav {
+  padding: 15px;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+display: inline-flex;
+list-style: none;
+line-height: 42px;
+margin-left: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #272142;
+  transition: all 100ms ease-in-out;
+}
+
+nav li.active a, nav a:hover {
+  color: var(--primary-color);
+}
+
+footer{
+  margin: 60px 0;
+}
+
+foooter .contact-box {
+background: var(--secondary-color);
+padding:  30px;
+border-radius: 10px;
+margin: 0;
+}
+
+footer .email-link{
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+  text-align: center;
+}
+
+footer .email-link:hover {
+  color: var(--primary-color);
+}
+
+footer .social-links a {
+  margin:0  20px;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  padding: 10px 14px;
+  font-size: 18px;
+  border-radius: 50%;
+}
+
+footer .social-links a:hover{
+  color: white;
+  background: var(--primary-color);
+}
+
 
 .hero {
   background: var(--secondary-color);
@@ -55,6 +122,7 @@ p {
   border-radius: 5px;
   color: white;
   font-size: 18px;
+  font-weight: 650;
   line-height: 27px;
   padding: 15px 30px;
 }
@@ -101,32 +169,6 @@ p {
   max-height: 60px;
 }
 
-nav {
-  padding: 15px;
-}
-
-nav ul {
-  padding: 0;
-  margin: 0;
-}
-
-nav li {
-display: inline-flex;
-list-style: none;
-line-height: 42px;
-margin-left: 15px;
-}
-
-nav a {
-  text-decoration: none;
-  color: #272142;
-  transition: all 100ms ease-in-out;
-}
-
-nav li.active a, nav a:hover {
-  color: var(--primary-color);
-}
-
 @media (max-width: 900px) {
   h1 {
     font-size: 38px;
@@ -151,7 +193,7 @@ nav li.active a, nav a:hover {
     padding: 0;
     text-align: center;
   }
-  
+
   .content {
     padding: 10px;
     text-align: center;
