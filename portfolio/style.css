@@ -1,8 +1,8 @@
 :root {
-  --primary-color: #6c63ff;
-  --secondary-color: rgb (249, 247, 254)
-  --heading-font-family: 'Playfair', serif;
-  --default-font-family: 'Poppins', sans-serif;
+  --default-font-family: "Poppins", sans-serif;
+  --heading-font-family: "Merriweather", serif;
+  --primary-color: #885df1;
+  --secondary-color: #f7f7fd;
 }
 
 h1,
@@ -12,7 +12,7 @@ h4,
 h5,
 h6 {
   color: black;
-  font-family: var(--heading-font-family);
+  font-family: "Merriweather", serif;
   font-weight: bold;
 }
 
@@ -22,18 +22,18 @@ h1 {
 }
 
 h2 {
-  font-size: 64px;
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 42px;
 }
 
 p {
-  font-family: var(--default-font-family);
+  font-family: "Poppins", sans-serif;
   font-weight: normal;
   font-size: 18px;
   line-height: 1.8;
-}
-
-h4 {
-  font-size: 48px;
 }
 
 nav {
@@ -46,10 +46,10 @@ nav ul {
 }
 
 nav li {
-display: inline-flex;
-list-style: none;
-line-height: 42px;
-margin-left: 15px;
+  display: inline-flex;
+  list-style: none;
+  line-height: 42px;
+  margin-left: 15px;
 }
 
 nav a {
@@ -58,22 +58,28 @@ nav a {
   transition: all 100ms ease-in-out;
 }
 
-nav li.active a, nav a:hover {
+nav li.active a,
+nav a:hover {
   color: var(--primary-color);
 }
 
-footer{
+footer {
   margin: 60px 0;
 }
 
-foooter .contact-box {
-background: var(--secondary-color);
-padding:  30px;
-border-radius: 10px;
-margin: 0;
+foooter .btn {
+  background: var(--primary-color);
+  padding: 15px;
+  border-radius: 8px;
 }
 
-footer .email-link{
+footer .contact-box {
+  background: var(--secondary-color);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+footer .email-link {
   text-decoration: none;
   color: black;
   font-size: 24px;
@@ -85,7 +91,7 @@ footer .email-link:hover {
 }
 
 footer .social-links a {
-  margin:0  20px;
+  margin: 0 20px;
   color: var(--primary-color);
   background-color: var(--secondary-color);
   padding: 10px 14px;
@@ -93,11 +99,10 @@ footer .social-links a {
   border-radius: 50%;
 }
 
-footer .social-links a:hover{
+footer .social-links a:hover {
   color: white;
   background: var(--primary-color);
 }
-
 
 .hero {
   background: var(--secondary-color);
@@ -151,16 +156,16 @@ footer .social-links a:hover{
   padding: 100px 50px;
 }
 
-.content h1{
+.content h1 {
   font-size: 64px;
   line-height: 70px;
 }
 
 .content h2 {
   font-size: 18px;
-    font-family: var(--default-font-family);
+  font-family: var(--default-font-family);
 }
-.content h3{
+.content h3 {
   font-size: 24px;
   font-family: var(--default-font-family);
 }
@@ -174,10 +179,11 @@ footer .social-links a:hover{
     font-size: 38px;
   }
 
-  h2, p {
+  h2,
+  p {
     font-size: 20px;
   }
- p {
+  p {
     font-size: 20px;
   }
 
@@ -185,7 +191,7 @@ footer .social-links a:hover{
     font-size: small;
   }
 
-  .hero{
+  .hero {
     padding: 40px;
   }
 
@@ -200,6 +206,6 @@ footer .social-links a:hover{
   }
 
   .logo {
-margin-top: 10px;
+    margin-top: 10px;
   }
 }
