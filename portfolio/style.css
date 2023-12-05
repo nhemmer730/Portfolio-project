@@ -107,7 +107,7 @@ footer .social-links a:hover {
 .hero {
   background: var(--secondary-color);
   text-align: center;
-  padding: 160px 20px;
+  padding: 80px 20px;
 }
 
 .hero p {
@@ -147,27 +147,32 @@ footer .social-links a:hover {
 
 .img-fluid {
   border-radius: 20px;
-  max-width: 400px;
+  max-width: 600px;
   margin: 20px;
   padding: 10px;
 }
 
-.content {
-  padding: 100px 50px;
+.content-container {
+  padding: 60px 20px;
+  text-align: center;
 }
 
 .content h1 {
-  font-size: 64px;
-  line-height: 70px;
+  font-size: 56px;
 }
 
 .content h2 {
-  font-size: 18px;
+  font-size: 22px;
   font-family: var(--default-font-family);
 }
 .content h3 {
-  font-size: 24px;
+  font-size: 32px;
+  line-height: 1.5;
   font-family: var(--default-font-family);
+}
+
+.content p {
+  font-size: 14px;
 }
 
 .logo {
@@ -176,13 +181,14 @@ footer .social-links a:hover {
 
 @media (max-width: 900px) {
   h1 {
-    font-size: 38px;
+    font-size: 44px;
+    line-height: 1.5;
   }
 
-  h2,
-  p {
-    font-size: 20px;
+  h2 {
+    font-size: 44px;
   }
+
   p {
     font-size: 20px;
   }
@@ -201,7 +207,7 @@ footer .social-links a:hover {
   }
 
   .content {
-    padding: 10px;
+    padding: 0;
     text-align: center;
   }
 
