@@ -1,6 +1,8 @@
 :root {
-  --primary-color: rgb(208, 56, 102);
+  --primary-color: rgb(234, 52, 164);
   --secondary-color: #edc9e3;
+  --default-font-family: "dashiell-fine", serif;
+  --heading-font-family: "lemonde-courrier", serif;
 }
 
 h1 {
@@ -10,7 +12,8 @@ h1 {
 
 h2 {
   font-size: 48px;
-  font-family: var(--heading-font-family);
+  font-family: var(--default-font-family);
+  font-weight: 600;
 }
 
 h3 {
@@ -109,12 +112,12 @@ footer .social-links a:hover {
   font-family: var(--default-font-family);
   font-weight: normal;
   line-height: 2;
-  font-size: 24px;
+  font-size: 36px;
 }
 
 .hero h3 {
   font-family: var(--heading-font-family);
-  font-size: 36px;
+  font-size: 24px;
 }
 
 .btn-primary {
@@ -141,25 +144,15 @@ footer .social-links a:hover {
   padding: 10px 6px;
 }
 
-.img-fluid {
-  border-radius: 20px;
-  max-width: 600px;
-  max-height: 400px;
-  margin: 30px;
-  padding: 10px;
-}
-
 .content-container {
   padding: 60px 20px;
   text-align: center;
-}
-
-.content {
   margin: 30px 0;
 }
 
 .content a {
   font-size: 18px;
+  color: var(--primary-color);
 }
 
 .content h1 {
@@ -198,10 +191,6 @@ footer .social-links a:hover {
     font-size: 20px;
   }
 
-  li {
-    font-size: small;
-  }
-
   .hero {
     padding: 40px;
   }
@@ -223,6 +212,7 @@ footer .social-links a:hover {
   .img-fluid {
     max-width: 600px;
   }
+
   .logo {
     margin-top: 10px;
   }
