@@ -30,6 +30,7 @@ p {
 
 nav {
   padding: 15px;
+  font-family: var(--heading-font-family);
 }
 
 nav ul {
@@ -146,6 +147,26 @@ footer .social-links a:hover {
   margin: 20px 0;
 }
 
+.content-container h1 {
+  font-weight: 200;
+}
+
+.content-container h2 {
+  font-weight: 400;
+}
+
+.content-container p {
+  font-weight: 500;
+}
+
+.content-container img {
+  max-width: 100%;
+  display: block;
+  border-radius: 20px;
+  width: 100%;
+  height: auto;
+}
+
 .content a {
   font-size: 18px;
   color: var(--primary-color);
@@ -158,6 +179,7 @@ footer .social-links a:hover {
 .content h2 {
   font-size: 22px;
   font-family: var(--default-font-family);
+  font-weight: 300;
 }
 .content h3 {
   font-size: 32px;
@@ -174,16 +196,17 @@ footer .social-links a:hover {
 }
 
 .img-fluid {
-  border-radius: 10px;
-  max-height: 600px;
+  max-width: 85%;
   display: block;
-  margin: auto;
+  border-radius: 20px;
+  margin: 0 10px 0 10px;
 }
 
 .projects-link {
   display: block;
   font-size: 18px;
   padding: 30px;
+  font-family: var(--heading-font-family);
 }
 .project-content {
   padding: 20px 10px;
@@ -191,7 +214,15 @@ footer .social-links a:hover {
   text-align: center;
 }
 
-@media (max-width: 900px) {
+.project-content h2 {
+  font-size: 52px;
+}
+
+.project-content p {
+  font-size: 20px;
+}
+
+@media (max-width: 972px) {
   h1,
   h2 {
     font-size: 44px;
@@ -203,7 +234,8 @@ footer .social-links a:hover {
   }
 
   p {
-    font-size: 20px;
+    font-size: 16px;
+    line-height: 1.8;
   }
 
   .hero {
@@ -219,11 +251,11 @@ footer .social-links a:hover {
     text-align: center;
   }
 
-  .img-fluid {
-    max-width: 75%;
-  }
-
   .logo {
     margin-top: 10px;
+  }
+
+  .img-fluid {
+    margin: 10px 0;
   }
 }
